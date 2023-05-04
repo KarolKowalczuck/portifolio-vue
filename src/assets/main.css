@@ -1,29 +1,20 @@
 /* comentar todo o documento o criar um novo depois */
-/* 
+
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
 
-  font-weight: normal;
-}
 
 a,
 .pink {
   text-decoration: none;
-  color: rgb(243, 136, 229);
+  color: rgb(236, 62, 143);
   transition: 0.4s;
+  font-size: 18px;
+  font: bold;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   body {
     display: flex;
     place-items: center;
@@ -34,4 +25,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-} */
+}  */

@@ -1,61 +1,97 @@
 <script setup>
  import { RouterLink, RouterView } from 'vue-router'
-// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <header>
-      <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
+  <div class="wrapper">
 
-      <!-- <div class="wrapper">
-      <HelloWorld msg="Karolina Kowalczuck" /> -->
-
-      <div>
-        <h1>Karolina Kowalczuck</h1>
-
-        <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">Sobre</RouterLink>
-        <RouterLink to="/school">Currículo</RouterLink>
-        <RouterLink to="/contact">Contato</RouterLink>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <RouterView />
-    </main>
-
+    <div class="page">
+      <header>
+        <img alt="photo-perfil" class="photo-perfil" src="./components/icons/images/imagem-perfil.jpg"/>
+        
+        <div>
+          <h1>Karolina Borges Kowalczuck</h1>
+          
+          <nav>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/about">Hobbies</RouterLink>
+            <RouterLink to="/school">Currículo</RouterLink>
+            <RouterLink to="/contact">Contato</RouterLink>
+          </nav>
+        </div>
+      </header>
+      
+      <br>
+      <div class="vertical"></div>
+      <br>
+      
+      <main>
+        <RouterView />
+      </main>
+    </div>
+    
     <footer>
-      Meu rodapé
-
+      <nav>
+      </nav>
+      
     </footer>
   </div>
+
+
+
   
 </template>
 
 <style scoped>
 
-header {
-  background: lavender;
-  position: fixed;
-  top: 0;
-  z-index: 2;
+.wrapper {
   width: 100vw;
-  height: 15vh;
-  display: flex; /* trabalhar com tamanho flexivel das coisas, que se ajustam sozinhas */
-  
-  justify-content:space-between;
-  padding: 0 2rem;   /* valores verticais e depois horizontais */
-  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 90vh;
+  width: 100vw;
+  
+}
+
+header {
+  line-height: 1.5;
+  max-height: 100vh;
+
+  width: 50vw;
+  height: 50vh;
+  align-items: center;
+  display: block;
+  flex-direction: column;
+  justify-content:space-around;
+}
+
+.photo-perfil {
+  display: block;
+  margin: 0 auto 2rem;
+  justify-content:left;
+  align-items: left;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  border-radius: 122px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  18px 18px 26px #8d8d8d,
+              -18px -18px 26px #ffffff;
 }
 
 header nav {
   display: flex;
-  justify-content: space-between;
-  min-width: 30%;
+  justify-content:center;
+  justify-content: space-evenly;
+  width: 50vh;
+  margin-left: 190px;
   color: rgb(236, 23, 140);
 }
 
@@ -64,21 +100,51 @@ header h1 {
   font-size: 2.6rem;
   top: -10px;
   color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.vertical {
+  border-left: 1px solid rgb(236, 62, 143);
+  height: 700px;
+  margin-top: -50vh;
+  margin: 2rem;
 }
 
 main {
   padding-top: 10vh;
-  min-height: 120vh;
-  background: lightblue;
+  height: 100%;
+  width: 60vh;
   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  
+}
+
+footer nav {
+  display: flex;
+  justify-content:center;
+  justify-content: space-evenly;
+  margin-top: 3.5vh;
+  color: rgb(236, 23, 140);
+  background-color: transparent;
+  margin-left: 0px;
 }
 
 footer {
-    background: lightslategrey;
-
+  height: 10vh;
+  width: 100vw;
+  margin-left: 0px;
+  background-color: transparent;
+  background: rgba( 183, 70, 128, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-
 
 </style>
 

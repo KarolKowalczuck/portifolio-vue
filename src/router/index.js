@@ -26,6 +26,22 @@ const router = createRouter({
       path: '/contact',
       name: 'contato',
       component: () => import('../views/ContactView.vue')
+    },
+
+    {
+      path: '/circo',
+      name: 'circo',
+      component: () => import('../components/Circo.vue')
+    },
+    {
+      path: '/books',
+      name: 'livros',
+      component: () => import('../components/Books.vue')
+    },
+    {
+      path: '/bakery',
+      name: 'confeitaria',
+      component: () => import('../components/Bakery.vue')
     }
   ]
 })
