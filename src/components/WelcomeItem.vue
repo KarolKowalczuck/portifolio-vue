@@ -57,7 +57,7 @@ h3 {
     background-color: lightgray;
   }
 
-  .item:before {
+  /* .item:before {
     content: ' ';
     position: absolute;
     left: 0;
@@ -80,6 +80,6 @@ h3 {
 
   .item:last-of-type:after {
     display: none;
-  }
+  } */
 }
 </style>

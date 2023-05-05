@@ -21,7 +21,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
   h1 {
     color: rgb(236, 62, 143);
     font: bold;
-    font-size: 50px;
+    font-size: 40px;
     font: sans-serif;
     
   }

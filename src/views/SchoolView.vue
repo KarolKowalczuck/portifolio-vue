@@ -4,49 +4,58 @@ import WelcomeItem from '../components/WelcomeItem.vue'
 
 <template>
 
-  <WelcomeItem>
-       
-    <template #heading>Formações</template>
-    <ul>
-        <li>Colégio Nossa Senhora Medianeira</li>
-        <li>Colégio Positivo</li>
-        <li>PUCPR - Pontificia Universidade Católica</li>
-        <li>IPOG - Pós Graduação em BIM</li>
-        <li>Centro Europeu - Chef Patissier</li>
-        <li>Snow Academy</li>
-    </ul>
-    
+  <div class="school">
+    <WelcomeItem>
+      
+      <h2 class="titulo">Formações</h2>
 
-  </WelcomeItem>
+      <ul>
+          <li>Colégio Nossa Senhor Medianeira</li>
+          <li>PUCPR - Arquitetura e Urbanismo</li>
+          <li>IPOG - Master BIM: Ferramentas de Gestão e Projetos</li>
+          <li>Centro Europeu - Chef Patissier</li>
+          <li>Snowman Academy</li>
+      </ul>
 
-  <WelcomeItem>
-  
-    <template #heading>Experiências Profissionais</template>
+    </WelcomeItem>  
 
-    <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Aut tenetur officia nihil commodi nam accusantium amet quae? </li>
-        <li>Perferendis iure, facilis, corrupti voluptatem, saepe ab qui accusantium quo aut delectus porro?</li>
-    </ul>
+    <WelcomeItem>
+      
+        <h2 class="titulo">Experiências Profissionais</h2>
 
-    <h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eos tenetur temporibus hic facere inventore sapiente ea voluptatum rem ad unde alias veniam, modi voluptate tempora cumque libero sit. Odio?
-    </h3>
-  </WelcomeItem>
+        <ul>
+            <li>Área Aquitetura e Interiores</li>
+            <li>Loyola Arquitetos</li>
+            <li>Studio Graphibox</li>
+            <li>Arquibusiness Arqiutetura</li>
+        </ul>
 
+      </WelcomeItem>
+
+  </div>
 
 
 </template>
 
 <style scoped>
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: rgb(233, 53, 128);  
+}
+
 li {
     color: rgb(49, 48, 48);
     padding: 0.5rem;
-    margin-left: 2rem;
 }
 
 ul {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 h3 {
@@ -56,35 +65,3 @@ h3 {
 
 
 </style>
-
-
-
-
-
-<!-- <script setup>
-import TheWelcome from '../components/School.vue'
-</script>
-
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template> -->
-
-
-
-<!-- <template>
-    <div class="school">
-        <h1>Formação:</h1>
-    </div>
-  </template>
-  
-  <style>
-  @media (min-width: 1024px) {
-    .school {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-  }
-  </style> -->

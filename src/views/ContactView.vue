@@ -4,37 +4,44 @@ import WelcomeItem from '../components/WelcomeItem.vue'
 
 <template>
 
-  <WelcomeItem>
-    <template #icon>
-        <img src="../components/icons/images/iconePhone.png" class="phone" alt="hobbie-phone">
-    </template>
+  <div class="contact">
+
+      <WelcomeItem>
+        <template #icon>
+          <img src="../components/icons/images/iconePhone.png" class="phone" alt="hobbie-phone">
+        </template>
     
-    <template #heading>Telefone</template>
+        <template #heading>Telefone</template>
 
-    (00)00000-0000
+        (00)00000-0000
 
-  </WelcomeItem>
+      </WelcomeItem>
 
-  <WelcomeItem>
-    <template #icon>
-        <img src="../components/icons/images/iconeMail.png" class="email" alt="email">
-    </template>
-    <template #heading>Email</template>
+      <WelcomeItem>
+        <template #icon>
+            <img src="../components/icons/images/iconeMail.png" class="email" alt="email">
+        </template>
+        <template #heading>Email</template>
 
-    karolina@mail.com
+        karolina@mail.com
 
-  </WelcomeItem>
+      </WelcomeItem>
 
-  <WelcomeItem>
-    <template #icon>
-        <img src="../components/icons/images/iconeAdress.png" class="adress" alt="adress">
-    </template>
-    
-    <template #heading>Endereço</template>
+      <WelcomeItem>
+        <template #icon>
+            <img src="../components/icons/images/iconeAdress.png" class="adress" alt="adress">
+        </template>
+        
+        <template #heading>Endereço</template>
 
-    Avenida Cândido de Abreu, 526 - Centro Cívico, Curitiba - PR
+        Avenida Cândido de Abreu, 526 - Centro Cívico, Curitiba - PR
 
-  </WelcomeItem>
+      </WelcomeItem>
+
+
+  </div>
+
+
 
 
 
