@@ -24,7 +24,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
         
       </template>
       <nav>
-            <RouterLink to="/books" class="titulo">Livros</RouterLink>
+            <RouterLink to="/books" class="titulo">Livro</RouterLink>
       </nav>
         <br>
 
