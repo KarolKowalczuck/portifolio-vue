@@ -32,13 +32,15 @@ import WelcomeItem from '../components/WelcomeItem.vue'
 
   </WelcomeItem>
 
-  <WelcomeItem>
+  <WelcomeItem class="bakery-item">
     <template #icon>
         <img src="../components/icons/images/iconeBolo.png" class="hobbie-bakery" alt="hobbie-bakery">
-    </template>
-    
-    <h3 class="titulo">Confeitaria</h3>
+        <br>
+        <h3 class="titulo">Confeitaria</h3>
 
+      </template>
+    
+    
     <img src="../components/icons/images/bolo1.png" class="bolo-1" alt="bolo-1">
 
   </WelcomeItem>

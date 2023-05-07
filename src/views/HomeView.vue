@@ -8,10 +8,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
     <h1>Bem Vindo!</h1>
     <br>
     <p>Esta é a minha primeira pagina feita em Vue!</p>
-    <p>Aqui você encontra algumas informações sobre mim, como minhas formações, meus hobbies e meu contato</p>
-    <br>
-    <p>Muito Obrigada!</p>
-        
+            
   </WelcomeItem>
 
   
