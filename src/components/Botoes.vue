@@ -72,7 +72,7 @@ button {
 }
 
 .email {
-    color: rgb(175, 50, 154);
+    color: rgb(236, 23, 140);
     font-size: medium;
     text-align: center;
     overflow: hidden;
