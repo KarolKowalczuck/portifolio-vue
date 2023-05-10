@@ -26,9 +26,11 @@ import { useLink } from 'vue-router'
         </div>
 
         <div class='mail'>
-            <a class="icone">
-                <img src="../assets/fotos/gmail-icone.png" alt=""></a>
-            <a class="email" href="mailto:karolinaborgesk@gmail.com">karolinaborgesk@gmail.com</a>
+            <a href="mailto:karolinaborgesk@gmail.com">
+                <button>
+                    <img src="../assets/fotos/gmail-icone.png" alt="" /><span class="email">karolinaborgesk@gmail.com</span>
+                </button>
+            </a>
         </div>
     </div>
 </template>
@@ -55,32 +57,34 @@ button {
     place-content: center;
 }
 
-.mail {
+.mail button {
     display: flex;
     align-items: center;
-    cursor: pointer;
-    width: 0px;
 }
 
 .mail:hover {
+    border-radius: 20px;
     background-color: rgb(255, 255, 255);
     border-color: transparent;
-    border-radius: 20px;
-    height: 60px;
-    width: 250px;
+    height: 54px;
+    width: 240px;
     transition: 1s;
 }
 
 .email {
     color: rgb(236, 23, 140);
-    font-size: medium;
+    font-size: small;
     text-align: center;
-    overflow: hidden;
     transition: 1s;
     padding-left: 4px;
+    height: 1.2rem;
+    width: 0px;
+    overflow: hidden;
 }
 
-.email:hover {
-    transition: 1s;
+.mail:hover .email {
+    display: flex;
+    width: 217px;
+    align-content: center;
 }
 </style>
