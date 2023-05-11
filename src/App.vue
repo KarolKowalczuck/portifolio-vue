@@ -1,6 +1,7 @@
 <script setup>
  import { RouterLink, RouterView } from 'vue-router'
  import Botoes from './components/Botoes.vue'
+ 
 </script>
 
 <template>
@@ -15,10 +16,10 @@
           
           <nav>
             <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/sobre">Sobre mim</RouterLink>
             <RouterLink to="/about">Hobbies</RouterLink>
             <RouterLink to="/school">Currículo</RouterLink>
-            <RouterLink to="/contact">Contato</RouterLink>
-          </nav>
+            </nav>
         </div>
       </header>
       
