@@ -1,5 +1,7 @@
 <script setup>
  import { RouterLink, RouterView } from 'vue-router'
+ import Botoes from './components/Botoes.vue'
+ 
 </script>
 
 <template>
@@ -14,10 +16,10 @@
           
           <nav>
             <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/sobre">Sobre mim</RouterLink>
             <RouterLink to="/about">Hobbies</RouterLink>
             <RouterLink to="/school">Currículo</RouterLink>
-            <RouterLink to="/contact">Contato</RouterLink>
-          </nav>
+            </nav>
         </div>
       </header>
       
@@ -31,6 +33,7 @@
     
     <footer>
       <nav>
+        <Botoes />
       </nav>
       
     </footer>
@@ -125,8 +128,7 @@ main {
 footer nav {
   display: flex;
   justify-content:center;
-  justify-content: space-evenly;
-  margin-top: 3.5vh;
+  margin-top: 1.5vh;
   color: rgb(236, 23, 140);
   background-color: transparent;
   margin-left: 0px;
